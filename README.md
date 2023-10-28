@@ -30,12 +30,11 @@ LEFT JOIN actor ON old_HDD.Actor_id = actor.Actor_id
 GROUP BY actor.Actor_id, actor.Name_complete
 ORDER BY num_peliculas DESC;
 
- ![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query2.png)
+![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query2.png)
  
  
  
- 
- ### 3  ¿Cuál es la película más corta?
+### 3  ¿Cuál es la película más corta?
  
 SELECT film.title, film.length
 FROM film
@@ -46,7 +45,7 @@ WHERE film.length = (SELECT MIN(film.length) FROM film);
 
 
 
-### 4  Título de las películas disponibles en el inventario de la tienda 2.
+### 4 Título de las películas disponibles en el inventario de la tienda 2.
 
 SELECT film.title
 FROM inventory
@@ -67,7 +66,6 @@ INNER JOIN actor ON old_HDD.Actor_id = actor.Actor_id
 INNER JOIN film ON old_HDD.film_id = film.film_id
 INNER JOIN category ON old_HDD.category_id = category.category_id
 WHERE actor.Name_complete = 'PENELOPE GUINESS' and category.Category = 'Documentary'
-
 
 ![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query5.png)
 
