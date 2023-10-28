@@ -9,7 +9,7 @@
 # BONUS QUERIES
 
 
-###  1 ¿Qué actores han participado en la película con el film_id = 34?
+### 1 ¿Qué actores han participado en la película con el film_id = 34?
 
 SELECT actor.Actor_id, actor.Name_complete, film.film_id
 FROM old_HDD
@@ -17,7 +17,7 @@ LEFT JOIN actor ON old_HDD.Actor_id = actor.Actor_id
 LEFT JOIN film ON old_HDD.film_id = film.film_id
 WHERE film.film_id = 34;
 
-![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query1.png)
+![Query1](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query1.png)
 
 
 
@@ -30,7 +30,7 @@ LEFT JOIN actor ON old_HDD.Actor_id = actor.Actor_id
 GROUP BY actor.Actor_id, actor.Name_complete
 ORDER BY num_peliculas DESC;
 
-![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query2.png)
+![Query2](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query2.png)
  
  
  
@@ -40,7 +40,7 @@ SELECT film.title, film.length
 FROM film
 WHERE film.length = (SELECT MIN(film.length) FROM film);
 
-![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query3.png)
+![Query3](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query3.png)
 
 
 
@@ -52,7 +52,7 @@ FROM inventory
 LEFT JOIN film ON inventory.film_id = film.film_id
 WHERE inventory.store_id = 2;
 
-![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query4_SQL.csv)
+![Query4_SQL](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query4_SQL.csv)
 
 
 
@@ -67,5 +67,5 @@ INNER JOIN film ON old_HDD.film_id = film.film_id
 INNER JOIN category ON old_HDD.category_id = category.category_id
 WHERE actor.Name_complete = 'PENELOPE GUINESS' and category.Category = 'Documentary'
 
-![Image text](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query5.png)
+![Query5](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query5.png)
 
