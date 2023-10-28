@@ -2,9 +2,11 @@
 
 
 
+
+
+
+
 # BONUS QUERIES
-
-
 
 
 ###  1 ¿Qué actores han participado en la película con el film_id = 34?
