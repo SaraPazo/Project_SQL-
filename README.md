@@ -48,11 +48,7 @@ Posteriormente se crea la base de datos:
 ![Image](https://github.com/SaraPazo/Project_SQL-/blob/main/your_code/EDD_SQL_Diagrama.png)
 
 
-
-
-
-# BONUS QUERIES
-
+### 6. BONUS QUERIES
 
 - 1 ¿Qué actores han participado en la película con el film_id = 34?
 
@@ -63,7 +59,6 @@ FROM old_HDD
 LEFT JOIN actor ON old_HDD.Actor_id = actor.Actor_id
 LEFT JOIN film ON old_HDD.film_id = film.film_id
 WHERE film.film_id = 34;
-
 ```
 ![Query1](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query1.png)
 
@@ -88,7 +83,6 @@ ORDER BY num_peliculas DESC;
 SELECT film.title, film.length
 FROM film
 WHERE film.length = (SELECT MIN(film.length) FROM film);
-
 ```
 ![Query3](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query3.png)
 
@@ -116,7 +110,6 @@ INNER JOIN actor ON old_HDD.Actor_id = actor.Actor_id
 INNER JOIN film ON old_HDD.film_id = film.film_id
 INNER JOIN category ON old_HDD.category_id = category.category_id
 WHERE actor.Name_complete = 'PENELOPE GUINESS' and category.Category = 'Documentary'
-
 ````
 ![Query5](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query5.png)
 
