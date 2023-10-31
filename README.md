@@ -24,6 +24,7 @@ Como conocedores de las nuevas herramientas en organización de datos nos ha lla
 - your_code: 
     - **Cleaning_SQL.ipynb**: jupyter notebook con la limpieza de datos y preparación de la data para el posterior análisis.
     -  **EDD_SQL_Script.sql** y **EDD_SQL_Diagrama.png**: scripts.sql y el diagrama creado con las relaciones entre las tablas.
+    - **Queries_SQL_films.sql**: script con las queries que están representadas en el ReadMe. 
 
 
 ### 3. ORGANIZACIÓN DE LOS DATOS
