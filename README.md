@@ -98,7 +98,7 @@ LEFT JOIN film ON inventory.film_id = film.film_id
 WHERE inventory.store_id = 2;
 
 ```
-![Query4_SQL](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query4_SQL.csv)
+[Query4_SQL](https://github.com/SaraPazo/Project_SQL-/blob/main/Imagen/Query4_SQL.csv)
 
 
 
